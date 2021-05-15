@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* FOOTER */
+footer {
+  background: #004c3f;
+  color: #faf7ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+footer svg {
+  margin-left: 0.25em;
+}
