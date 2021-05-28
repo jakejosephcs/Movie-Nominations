@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import { Link } from 'react-router-dom';
+import { Context } from '../Context';
 
 export default function Header() {
+  const { lengthOfNominatedList } = useContext(Context);
+
   return (
     <header>
       <div className='container container-header'>
@@ -37,7 +40,9 @@ export default function Header() {
           <Link to='/nominations'>
             <button>Nominees</button>
           </Link>
-          <span>2</span>
+          {lengthOfNominatedList() !== 0 && (
+            <span>{lengthOfNominatedList()}</span>
+          )}
         </div>
       </div>
     </header>
