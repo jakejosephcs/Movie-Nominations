@@ -81,3 +81,54 @@ h1 span {
   color: #004c3f;
 }
 
+/* MAIN */
+main {
+  display: grid;
+  padding: 1.5rem;
+  grid-template-rows: min-content min-content 1fr min-content;
+  background-color: #faf7ed;
+}
+
+/* SEARCH */
+.search-container {
+  background-color: #004c3f;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem;
+  border-radius: 0.25em;
+  margin-bottom: 0.25rem;
+}
+
+.search-container input {
+  margin: 0 2em;
+  background-color: #004c3f;
+  border: none;
+  color: #faf7ed;
+}
+
+.search-container input:focus {
+  outline: thin dotted #faf7ed;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.5rem;
+}
+
+.search-cancel {
+  position: absolute;
+  right: 0.5rem;
+}
+
+.search-cancel:hover,
+.search-cancel:focus {
+  cursor: pointer;
+}
+
+.search-results {
+  text-align: center;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
