@@ -214,3 +214,56 @@ main {
   color: #004c3f;
   cursor: no-drop;
 }
+
+/* SHOW MORE */
+.show-more {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'plot plot'
+    'imdb-logo rating';
+  gap: 0.75em;
+  z-index: 1;
+}
+
+.plot {
+  grid-area: plot;
+}
+
+.imdb-logo {
+  grid-area: imdb-logo;
+  justify-self: right;
+}
+
+.rating {
+  grid-area: rating;
+  font-weight: bold;
+}
+
+/* PAGNATION */
+
+.pagnation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagnation-container h3 {
+  margin: 0 1rem;
+}
+
+.pagnation-container button {
+  background-color: #faf7ed;
+  border: none;
+}
+
+.pagnation-container button:hover,
+.pagnation-container button:focus {
+  cursor: pointer;
+}
+
+.pagnation-container button:disabled {
+  background-color: #faf7ed;
+  border: none;
+  opacity: 0.25;
+}
