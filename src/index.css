@@ -132,3 +132,85 @@ main {
   font-size: 0.75rem;
   margin-bottom: 1rem;
 }
+
+/* MOVIES */
+.movies-container {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+.movie {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 1em;
+}
+
+.movie .more {
+  position: absolute;
+  right: 1rem;
+}
+
+.movie .more:hover,
+.movie .more:focus {
+  cursor: pointer;
+}
+
+.movie .nominated {
+  fill: #e75e41;
+}
+
+.movie .year {
+  position: absolute;
+  left: 1rem;
+  font-size: 0.8rem;
+  color: #faf7ed;
+}
+
+.movie .title {
+  position: absolute;
+  bottom: 2.5rem;
+  text-align: center;
+  width: 80%;
+  color: #faf7ed;
+  font-weight: bold;
+}
+
+.movie button {
+  position: absolute;
+  bottom: 1rem;
+  background-color: #a8eb12;
+  color: #004c3f;
+  width: 80%;
+  padding: 0.25em 0.5em;
+  justify-self: center;
+  border: none;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+.movie button.nominated {
+  background-color: #e75e41;
+  color: #faf7ed;
+}
+
+.movie button:hover,
+.movie button:focus {
+  cursor: pointer;
+}
+
+.movie button:disabled {
+  opacity: 0.75;
+  background-color: #faf7ed;
+  color: #004c3f;
+  cursor: no-drop;
+}
